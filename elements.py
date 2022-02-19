@@ -125,5 +125,7 @@ class Player:
                     row = {"A": 0, "B": 1, "C": 2}.get(move[0])
                     col = {1: 0, 2: 1, 3: 2}.get(int(move[1]))
                     return row, col, self.id
+                else:
+                    print("Not a valid move. Try again.")
             except IndexError:
-                print("Not a valid move. Try again.")
+                continue
