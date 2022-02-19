@@ -46,7 +46,10 @@ def main():
     won = False
 
     while True:
+
         board.display()
+
+
         print(f"Make a move, {first_player.name}:")    
         while True:
             row, col, id = first_player.makeMove()
