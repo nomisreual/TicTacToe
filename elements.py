@@ -119,10 +119,11 @@ class Player:
 
     def makeMove(self):
         while True:
-            move = input()
-            if move[0] in ("A", "B", "C") and move[1] in ("1", "2", "3"):
-                row = {"A": 0, "B": 1, "C": 2}.get(move[0])
-                col = {1: 0, 2: 1, 3: 2}.get(int(move[1]))
-                return row, col, self.id
-            else:
+            try:
+                move = input()
+                if move[0] in ("A", "B", "C") and move[1] in ("1", "2", "3"):
+                    row = {"A": 0, "B": 1, "C": 2}.get(move[0])
+                    col = {1: 0, 2: 1, 3: 2}.get(int(move[1]))
+                    return row, col, self.id
+            except IndexError:
                 print("Not a valid move. Try again.")
