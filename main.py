@@ -19,7 +19,7 @@ def main():
     f"""
 1. {name1}, enter 1
 2. {name2}, enter 2
-3. random, enter 3     
+3. Random, enter 3     
     """
     )
     while True:
