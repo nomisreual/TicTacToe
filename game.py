@@ -96,7 +96,6 @@ class Game:
         while playOn:
             for player in players:
                 self.board.display()
-
                 print(f"Make a move, {player.name}:")    
                 while True:
                     row, col, id = player.makeMove()
